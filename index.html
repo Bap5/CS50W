@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+        #searchbox{
+          border-radius: 20px;
+          border: 1px solid #D5D8DC;
+          padding: 10px;
+          text-align: left;
+          margin-left:30%;
+          margin-right:auto;
+          position: absolute;
+          top: 40%;
+          padding-top:13px;
+          padding-bottom: 13px;
+          width:580px;
+        }
+        #searchbox:hover{
+          box-shadow:0px 0px 4px 1px #EAECEE;
+        }
+        #button {
+          padding:10px;
+          border: 1px solid #f2f2f2;
+          color:#5F6368;
+          border-radius: 4px;
+          margin:7px;
+          margin-top: 3px;
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+        .center {
+          display: flex;
+          justify-content: center;
+          height:200px;
+          align-items: center;
+
+        }
+        #pic{
+          margin-left:40.5%;
+          margin-top:10%;
+        }
+        #header{
+          display:flex;
+          justify-content: flex-end;
+        }
+        .links{
+          margin-left:10px;
+          margin-right:5px;
+          font-size:13px;
+          font-family:arial, sans-serif;
+          color: rgba(0, 0, 0, 0.87);
+        }
+        </style>
+    </head>
+    <body>
+      <div id="header">
+        <a class="links" href="imageSearch.html">Image Search</a>
+        <a class="links" href="advancedSearch.html">Advanced Search</a>
+      </div>
+      <div id="pic">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+      </div>
+      <form action="https://google.com/search" method="GET">
+        <input id="searchbox" type="text" name="q">
+        <div class=center>
+          <input id="button" type="submit" value="Google Search">
+          <input id="button" type="submit" name="btnI" value="Im Feeling Lucky">
+         </div>
+      </form>
+    </body>
+</html>

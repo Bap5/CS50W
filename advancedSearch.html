@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <style>
+     #header{
+       display:flex;
+       justify-content: flex-end;
+       padding-right:10px;
+       padding:5px;
+       font-size:15px;
+
+      }
+     .links{
+       margin-left:10px;
+      }
+      #advSearch{
+        margin:10px;
+        padding:10px;
+        align-items:left;
+      }
+      #button, {
+        padding:10px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        margin:7px;
+        margin-top: 3px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .box{
+        border-radius: 1px;
+        border: 1px solid #d9d9d9;
+        border-top: 1px solid #c0c0c0;
+        font-size: 13px;
+        height: 25px;
+        padding: 1px 8px;
+        width:20%;
+      }
+      #G{
+        margin-left:20px;
+        font-size:20px;
+        color: rgb(217, 48, 37);
+        font-family:arial, sans-serif;
+        margin-bottom:15px;
+        border-bottom:1px solid #f1f1f1;
+
+      }
+      #H{
+        border-bottom-color: red;
+        margin-left:20px;
+        border-bottom:20px;
+        font-size:16px;
+        font-family:arial, sans-serif;
+        margin:20px;
+      }
+      #I{
+        margin-left:20px;
+        display:flex;
+      }
+      #buttonA{
+        background-color: #4d90fe;
+        color:white;
+        padding:10px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        margin:7px;
+        margin-left:425px;
+        margin-top: 3px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      #blockOne{
+        float: left;
+        display: inline-block;
+        min-width: 167px;
+        width: 16%;
+        height: 42px;
+        color: #222;
+        font-size: 13px;
+        line-height: 16px;
+        vertical-align: middle;
+        font-family:arial, sans-serif;
+      }
+      #blockTwo{
+        float: left;
+        display: inline-block;
+        min-width: 167px;
+        min-height: 41px;
+        vertical-align: middle;
+        width: 50%;
+      }
+   </style>
+ </head>
+ <body>
+   <div id="header">
+     <a class="links" href="index.html">Google Search</a>
+   </div>
+
+   <div id="G">
+   <label >Advanced Search</label>
+   </div>
+
+   <div id=advSearch>
+     <form action="https://www.google.com/search" method="GET">
+     <div id=H>
+     <label >Find pages with...</label><br>
+     </div>
+     <div id=I>
+       <label id=blockOne>all these words:</label>
+       <input class="box" type="text" name="as_q"><br>
+     </div>
+     <div id=I>
+       <label id=blockOne>this exact word or phrase:</label>
+       <input class="box" type="text" name="as_epq"><br>
+     </div>
+
+     <div id=I>
+       <label id=blockOne>any of these words:</label>
+       <input class="box" type="text" name="as_oq"><br>
+     </div>
+     <div id=I>
+       <label id=blockOne>none of these words:</label>
+       <input class="box" type="text" name="as_eq"><br>
+     </div>
+     <input id="buttonA" type="submit" value="Advanced Search">
+      </form>
+   </div>
+
+ </body>
+</html>
